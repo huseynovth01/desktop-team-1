@@ -1,0 +1,160 @@
+@import "./mixins";
+
+*{
+  font-family: 'Montserrat' , sans-serif;
+}
+
+// main{
+//   @include mobile{
+//     flex-wrap: wrap;
+//     width: 100% !important;
+//   }
+//   .container{
+//     @include mobile{
+//       // flex-wrap: wrap;
+//       width: 100% !important;
+//     }
+//     width: 80%;
+//     margin-left: 20px;
+//     .metn{
+//       margin-left: 20px;
+//       @include mobile{
+//          flex-wrap: wrap;
+//          display: flex;
+//       }
+//       p{
+//         color: #737373;
+//       }
+//       h1{
+//         color: red;
+//       }
+//       margin-top: 30px;
+//       display: flex;
+//       gap: 80px;
+//       justify-content: center;
+//     }
+  
+//     .demo{
+//       @include mobile{
+//         // flex-wrap: wrap;
+//         flex-direction: column;
+//         width: 100%;
+//       }
+//       display:flex;
+  
+//       .right-box{
+//         @include mobile{
+//           width: 100%;
+//         }
+
+//         img{
+//           width:900px;
+//           height:900px;
+//         }
+//       }
+//       .left-box{
+//         width: 50%;
+//         background-color: azure;
+//         @include mobile{
+//           width: 100% !important;
+//           flex-wrap: wrap;
+//           justify-content: center;
+//           align-items: center;
+//           text-align: center;
+//         }
+//         .text-down{
+//           text-align: center;
+//           align-items: center;
+//           .cricles{
+//             margin-top: 40px;
+//           }
+//         }
+//         .tv-foto{
+//           img{
+//             width: 650px;
+//             height: 400px;
+//             margin-top: 30px;
+//           }
+  
+//         }
+  
+//         .text{
+  
+//           display: flex;
+//           flex-direction: column;
+//           text-align: center;
+//           justify-content: center;
+//           margin-top: 40px;
+//           p{
+//             color: #737373;
+//           }
+//         }
+  
+//       }
+//     }
+//   }
+// }
+
+
+
+
+.main{
+  display: flex;
+  background-color: gray;
+  width: 1060px;
+  margin: 50px auto;
+  @include mobile{
+    flex-direction: column;
+  }
+  .left-box{
+    img{
+      height: 100%;
+      @include mobile{
+        width: 100%;
+      }
+    }
+  }
+
+  .right-box{
+    text-align: center;
+    width: 37%;
+    @include mobile{
+      width: 100%;
+    }
+
+  }
+
+  .text{
+    text-align: center;
+  }
+
+
+
+}
+
+
+.footer{
+  width: 100%;
+  @include mobile{
+width: 1000px !important;
+
+  }
+  .metn{
+    display: flex;
+    justify-content: center;
+    @include mobile{
+      align-items: center;
+      flex-direction: column;
+    }
+    .row-1{
+    display: flex;
+    p{
+      @include mobile{
+        
+        width: 180px;
+      }
+    }
+   }
+    
+  }
+}
